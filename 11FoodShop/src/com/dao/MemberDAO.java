@@ -14,9 +14,15 @@ public class MemberDAO {
 	}
 
 	public MemberDTO login(SqlSession session, HashMap<String, String> map) {
-			MemberDTO dto =
-					session.selectOne("MemberMapper.login", map);
-			return dto;
-		}
+		MemberDTO dto =
+				session.selectOne("MemberMapper.login", map);
+		return dto;
+	}
+
+	public MemberDTO findid(SqlSession session, HashMap<String, String> map) {
+		MemberDTO dto =
+				session.selectOne("MemberMapper.FindID", map);
+		return dto;
+	}
 
 }

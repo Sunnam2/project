@@ -13,5 +13,6 @@
 </form>
 <button onclick="location='MemberAdd.jsp'">회원가입</button>
 <button onclick="location='LoginPage.jsp'">로그인</button>
+<button onclick="location='Find.jsp'">아이디/비밀번호 찾기</button>
 </body>
 </html>

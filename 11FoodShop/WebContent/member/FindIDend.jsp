@@ -5,13 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript">
-</script>
 </head>
 <body>
-${login.username}님 환영합니다
-<button onclick="location='Main.jsp'">로그아웃</button>
-
-<hr>
+<h1>아이디 찾기</h1>
+당신의 아이디는 ${dto.userid} 입니다.
 </body>
 </html>

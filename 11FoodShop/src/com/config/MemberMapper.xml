@@ -15,4 +15,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	 from member
 	 where userid =#{userid} and passwd=#{passwd}
 	</select>
+	<select id="FindID" parameterType="hashmap" 
+	resultType="MemberDTO">
+	 select userid
+	 from member
+	 where nickname =#{nickname} and phone1 =#{phone1} and phone2 =#{phone2}
+	</select>
 </mapper>

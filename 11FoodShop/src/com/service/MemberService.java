@@ -32,4 +32,17 @@ public class MemberService {
 		}
 		return dto;
 	}
+	
+	public MemberDTO FindID(HashMap<String, String> map) {
+		SqlSession session = MySqlSessionFactory.getSession();
+		MemberDTO dto =null;
+		MemberDAO dao =new MemberDAO();
+		try {
+			dto = dao.findid(session,map);
+		}finally {
+			session.close();
+		}
+		return dto;
+	}
+	
 }
