@@ -28,7 +28,7 @@
 								<tr>
 									<td>
 										<a href="FoodRetrieveServlet?FCode=${dto.FCode}"> 
-											<img src="image/items/${dto.FImage}.jpg" border="0" align="center" width="200">
+											<img src="image/items/${dto.FImage}.jpg" border="0" align="center" width="200" height="200">
 										</a>
 									</td>
 								</tr>
