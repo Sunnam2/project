@@ -8,16 +8,17 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	insert into member(userid , passwd , username , nickname , post , addr1 , addr2 , phone1 , phone2)
 	values(#{userid} , #{passwd} , #{username} , #{nickname} , #{post} , #{addr1} , #{addr2} , #{phone1} , #{phone2})
 	</insert>
-<select id="login" parameterType="hashmap" 
+<select id="login" parameterType="string" 
 	resultType="MemberDTO">
 	 select userid,passwd,username,nickname,post,addr1,addr2,
 					   phone1,phone2
 	 from member
 	 where userid =#{userid} and passwd=#{passwd}
 	</select>
-	<select id="FindID" parameterType="hashmap" 
+	<select id="FindID" parameterType="string" 
 	resultType="MemberDTO">
-	 select userid
+	 select userid,passwd,username,nickname,post,addr1,addr2,
+					   phone1,phone2
 	 from member
 	 where nickname =#{nickname} and phone1 =#{phone1} and phone2 =#{phone2}
 	</select>

@@ -19,10 +19,10 @@ public class MemberDAO {
 		return dto;
 	}
 
-	public MemberDTO findid(SqlSession session, HashMap<String, String> map) {
-		MemberDTO dto =
-				session.selectOne("MemberMapper.FindID", map);
-		return dto;
+	public MemberDTO FindID(SqlSession session, MemberDTO dto) {
+		MemberDTO dto2 =
+				session.selectOne("MemberMapper.FindID", dto);
+		return dto2;
 	}
 
 }

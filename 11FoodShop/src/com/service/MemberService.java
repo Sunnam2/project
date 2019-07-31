@@ -33,12 +33,12 @@ public class MemberService {
 		return dto;
 	}
 	
-	public MemberDTO FindID(HashMap<String, String> map) {
+	public MemberDTO FindID(MemberDTO dto) {
 		SqlSession session = MySqlSessionFactory.getSession();
-		MemberDTO dto =null;
+		//MemberDTO dto =null;
 		MemberDAO dao =new MemberDAO();
 		try {
-			dto = dao.findid(session,map);
+			dto = dao.FindID(session,dto);
 		}finally {
 			session.close();
 		}
