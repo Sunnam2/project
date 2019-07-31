@@ -9,5 +9,6 @@
 <body>
 <h1>아이디 찾기</h1>
 당신의 아이디는 ${dto.userid} 입니다.
+<button onclick="location='Mainservlet.java'">아이디/비밀번호 찾기</button>
 </body>
 </html>
